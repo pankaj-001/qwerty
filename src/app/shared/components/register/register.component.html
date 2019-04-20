@@ -1,0 +1,18 @@
+<p>
+  UID:<input type="text" [(ngModel)]="data.uid" />
+</p>
+<p>
+  PWD: <input type="password" [(ngModel)]="data.pwd" />
+</p>
+
+<p>
+  UID:<input type="text" [(ngModel)]="data.email" />
+</p>
+<p>
+  PWD: <input type="text" [(ngModel)]="data.phone" />
+</p>
+<input type="button" value='register' (click)="fnRegister()" />
+<a href="#/login">Login</a>
+<p>
+  {{msg}}
+</p>

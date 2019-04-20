@@ -1,0 +1,24 @@
+<div class="container-fluid">
+  <div class="row form-group">
+     <div class="col-sm-6">
+       <img width="400px" height="400px" src="{{imgPath}}{{productInfo._id}}.jpg" />
+     </div>
+
+     <div class="col-sm-6">
+       <div class="p-l-10">
+          <h1>{{productInfo.title}}</h1>
+          <h3>{{productInfo.cost}}</h3>
+       </div>
+       
+     </div>
+  </div>
+  <div class="row form-group">
+    <div class="col-sm-2">
+        <input type="button" value="Add TO Cart" class="btn btn-primary" (click)="fnAddToCart()" />
+    </div>
+    <div class="col-sm-2">
+        <input type="button" value="Order Now" class="btn btn-primary" (click)="fnOrderNow()" />
+        
+      </div>
+  </div>
+</div>

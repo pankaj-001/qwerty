@@ -1,0 +1,12 @@
+
+<div class="text-right menu">
+ <a  routerLink='/customer/home'  routerLinkActive="active-menu">Home</a>
+ <a  routerLink='/customer/profile' routerLinkActive="active-menu">Profile</a>
+ <a routerLink='/customer/viewOrders' routerLinkActive="active-menu">View Order</a>
+ <a routerLink='/customer/viewCart' routerLinkActive="active-menu">View Cart</a>
+ <a class="cursor-pointer" (click)="fnLogout()">Logout</a>
+</div>
+
+<router-outlet></router-outlet>
+
+

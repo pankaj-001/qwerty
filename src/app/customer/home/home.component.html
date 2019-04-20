@@ -1,0 +1,18 @@
+<div class="container-fluid">
+  <div class="row">
+     <div class="col-sm-6">
+       <input type="text" [(ngModel)]="searchText" class="form-control" />
+     </div>
+     <div class="col-sm-6">
+        <input type="button" (click)="fnSearch()" value="Search" class="btn btn-primary"/>
+      </div>
+  </div>
+
+  <div class="product-view cursor-pointer" *ngFor="let obj of products" (click)="fnProdcutClick(obj)">
+      <img  src="{{imgPath}}{{obj._id}}.jpg"/>
+      <h1>{{obj.title}}</h1>
+      <b>{{obj.cost}}</b>
+  </div>
+   
+</div>
+

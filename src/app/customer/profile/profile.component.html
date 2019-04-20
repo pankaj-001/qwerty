@@ -1,0 +1,15 @@
+<div>
+  Password:<input type='text' [(ngModel)]="userInfo.pwd" />
+</div>
+<div>
+    Email: <input type='text' [(ngModel)]="userInfo.email" />
+  </div>
+  <div>
+     Phone:  <input type='text' [(ngModel)]="userInfo.phone" />
+    </div>
+    <div>
+     Addresss:    <textarea [(ngModel)]="userInfo.delAdd"></textarea>
+      </div>
+  <div>
+    <input type="button" value="update" (click)="fnUpdate()" />
+  </div>

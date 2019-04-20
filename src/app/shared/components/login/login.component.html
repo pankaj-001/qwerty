@@ -1,0 +1,11 @@
+<p>
+  UID:<input type="text" [(ngModel)]="data.uid" />
+</p>
+<p>
+  PWD: <input type="password" [(ngModel)]="data.pwd" />
+</p>
+<input type="button" value='login' (click)="fnLogin()" />
+<a href="#/register">Register</a>
+<p>
+  {{msg}}
+</p>

@@ -1,0 +1,19 @@
+<p >
+  UID:<input type="text" [(ngModel)]="data.uid" [disabled]="isEdit" />
+</p>
+<p>
+  PWD: <input type="password" [(ngModel)]="data.pwd" />
+</p>
+
+<p>
+  UID:<input type="text" [(ngModel)]="data.email" />
+</p>
+<p>
+  PWD: <input type="text" [(ngModel)]="data.phone" />
+</p>
+<input *ngIf="!isEdit" type="button" value='register' (click)="fnRegister()" />
+<input *ngIf="isEdit" type="button" value='update' (click)="fnUpdate()" />
+
+<p>
+  {{msg}}
+</p>

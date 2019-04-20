@@ -1,0 +1,21 @@
+<table border="1px">
+    <tr>
+       <th *ngFor="let header of headers">
+          {{header}}
+       </th>
+       <th>Edit</th>
+       <th>Delete</th>
+    </tr>
+
+    <tr *ngFor="let obj of data">
+        <td *ngIf="hasImage">
+            <img id="img" src="{{imgPath}}{{obj._id}}.jpg" />
+        </td>
+        <td *ngFor="let key of keys">
+            {{obj[key]}}
+        </td>
+        <td><input type="button" value="edit" (click)="fnEdit(obj)" /></td>
+        <td><input type="button" value="delete" (click)="fnDelete(obj)"/></td>
+        
+      </tr>
+</table>

@@ -1,0 +1,24 @@
+<div>
+ Title <input [(ngModel)]="data.title" />
+
+</div>
+
+<div>
+ Cost <input [(ngModel)]="data.cost"/>
+
+</div>
+<div>
+  <input type="file" ng2FileSelect [uploader]="uploader" />
+</div>
+
+<div *ngIf="isEdit">
+   <img width="100px" height="100px"  src="{{imgPath}}" />
+</div>
+
+<div>
+  <input *ngIf="!isEdit" type='button' (click)="fnCreateProduct()" value="upload product" />
+  <input *ngIf="isEdit" type='button' (click)="fnUpdateProduct()" value="Update product" />
+</div>
+<div>
+  {{msg}}
+</div>

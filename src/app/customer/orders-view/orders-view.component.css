@@ -1,0 +1,27 @@
+.product-view{
+    height: 150px;
+    border: 1px solid red;
+    margin-top:5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.product-view > img{
+    position: absolute;
+    left: 25px;
+    top: 25px;
+    width: 100px;
+    height: 100px;
+}
+.product-view > h1{
+    position: absolute;
+    top:30px;
+    left: 50%;
+}
+
+.product-view > b{
+    position: absolute;
+    top:100px;
+    left: 50%;
+}
